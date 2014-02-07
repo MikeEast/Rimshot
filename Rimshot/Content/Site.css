@@ -40,3 +40,7 @@ input[type="checkbox"].input-validation-error {
 .validation-summary-valid {
     display: none;
 }
+.sell-item-image {
+    height: 300px;
+    float: none;
+}

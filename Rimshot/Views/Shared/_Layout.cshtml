@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Rimshot</title>
+    <link rel="stylesheet" href="https://static.tradera.com/touchweb/static/output/style/8400e9f8.module-selling.css" />
     @Styles.Render("~/Content/css")
+    
     @Scripts.Render("~/bundles/modernizr")
-
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -39,6 +40,9 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/ng")
+    @Scripts.Render("~/bundles/signalr")
+    <script src="~/signalr/hubs"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Optimization;
+using Microsoft.Owin;
 
 namespace Rimshot
 {
@@ -26,6 +27,15 @@ namespace Rimshot
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new ScriptBundle("~/bundles/signalr").Include(
+                    "~/Scripts/jquery.signalR-2.0.2.js"
+                ));
+
+            bundles.Add(new ScriptBundle("~/bundles/ng").Include(
+                    "~/Scripts/angular.js",
+                    "~/Scripts/ua-parser.js"
+                ));
         }
     }
 }
